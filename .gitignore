@@ -1,32 +1,17 @@
-# Prerequisites
-*.d
+#include <iostream>
+using namespace std;
+int main() {
+  int purchasequantity ;
+  cout<<"puchased price\n";
+  cin>>purchasequantity;
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+  if(purchasequantity>1000){
+    auto z=purchasequantity-((purchasequantity*10)/100);
+cout<<"total price you have to pay:"<<z<<endl;
+  }
+else{
+  cout<<"total amount you have to pay:"<<purchasequantity;
+}
+return 0;
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+}
